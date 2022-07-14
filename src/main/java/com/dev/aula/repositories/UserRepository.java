@@ -16,7 +16,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
 	Page<User> searchByName(String name, Pageable pageable);
 
 	Page<User> findBySalaryBetween(Double minSalary, Double maxSalary, Pageable pageable);
-
+//Se escrever o nome com a nomenclatura do metódo correto ele já realiza a busca
 	Page<User> findByNameContainingIgnoreCase(String name, Pageable pageable);
 
 }
